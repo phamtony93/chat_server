@@ -1,7 +1,8 @@
 import socket
+import sys
 
 clientHost = 'localhost'
-clientPort = 50005
+clientPort = int(sys.argv[1])
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as clientSocket:
     clientSocket.connect((clientHost, clientPort))

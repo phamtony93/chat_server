@@ -1,7 +1,13 @@
 import socket
+import sys
 
+if len(sys.argv) < 2:
+    print("Please pass port number as command line argument 1")
+    exit(0)
+
+print("argument 1 is ", sys.argv[1])
 serverHost = 'localhost' #is this right?
-serverPort = 50005
+serverPort = int(sys.argv[1])
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as serverSocket: 
     serverSocket.bind((serverHost, serverPort))
