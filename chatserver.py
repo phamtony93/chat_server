@@ -1,4 +1,4 @@
-######################################################################
+#################################################################################################
 #Author: Tony Pham
 #Program: Chat Server
 #Course: CS372
@@ -6,7 +6,7 @@
 #one parameter as the port number. Clients that connect to this server will take turns sending
 #and receiving mesages.
 #Last Modified: 2/9/2020
-
+#################################################################################################
 import socket
 import sys
 
